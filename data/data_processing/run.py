@@ -2,6 +2,11 @@ import pandas as pd
 import re
 
 
+#
+#  Parse Tuning Data
+#
+
+
 def parse_strings(strings):
     m = re.findall("([A-Z][0-9]+)", strings)
     if m:
@@ -37,3 +42,10 @@ df = pd.read_csv("../instrument_tunings.csv")
 df["StandardTuning"] = df["Tuning(s)"].apply(parse_row)
 
 df.to_csv("../instrument_tunings_parsed.csv")
+
+
+
+#
+#  Parse Tune Frequencies
+#
+
