@@ -25,6 +25,8 @@ class TuneAdapter(context: Context,
 
         val btnTune = tuningView.findViewById<Button>(R.id.tuneAction)
         btnTune.text = tune
+        btnTune.width = parent.width / 2
+        btnTune.height = parent.height / 2
         btnTune.setOnClickListener {
 
             val freq = tuneFrequencies[tune]
@@ -48,7 +50,7 @@ class TuneAdapter(context: Context,
 
 
 
-class Tune : AppCompatActivity() {
+class TuneActivity : AppCompatActivity() {
 
 
     private val tonePlayer = ContinuousBuzzer()
@@ -58,6 +60,9 @@ class Tune : AppCompatActivity() {
         setContentView(R.layout.activity_tune)
 
         val instrument = intent.getParcelableExtra<Instrument>(EXTRA_MESSAGE)
+
+
+        saveInstrument(applicationContext, instrument)
 
         val tuneContainer = findViewById<GridView>(R.id.tuneContainer)
 

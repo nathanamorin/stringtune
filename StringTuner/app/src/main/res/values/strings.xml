@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">String Tuner</string>
+    <string name="search_hint">Instrument Name</string>
+    <string name="search_title">Instrument Search</string>
+    <string name="preference_file_key">saved_instruments</string>
+    <string name="instrument_key">instruments</string>
 </resources>
