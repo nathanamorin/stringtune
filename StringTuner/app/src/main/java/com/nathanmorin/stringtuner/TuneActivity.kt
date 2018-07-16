@@ -25,8 +25,6 @@ class TuneAdapter(context: Context,
 
         val btnTune = tuningView.findViewById<Button>(R.id.tuneAction)
         btnTune.text = tune
-        btnTune.width = parent.width / 2
-        btnTune.height = parent.height / 2
         btnTune.setOnClickListener {
 
             val freq = tuneFrequencies[tune]

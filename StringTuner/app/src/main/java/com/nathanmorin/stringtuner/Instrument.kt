@@ -32,6 +32,13 @@ class Instrument(val name: String, val tuning: List<String>) : Parcelable {
         return name
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
 
+        if (other?.javaClass != javaClass) return false
 
+        other as Instrument
+
+        return other.name == name
+    }
 }
