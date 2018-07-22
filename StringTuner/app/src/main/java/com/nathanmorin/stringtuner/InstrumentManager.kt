@@ -4,15 +4,26 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStream
 
+lateinit var instruments: List<Instrument>
+
+fun getInstrument(context: Context, id: Int): Instrument?{
+
+    return getInstruments(context).firstOrNull { it.id == id }
+}
+
 fun getInstruments(context: Context): List<Instrument> {
 
     val inputStream: InputStream = context.resources.openRawResource(R.raw.instrument_tunings_parsed)
 
-    val instruments = mutableListOf<Instrument>()
-    inputStream.bufferedReader().useLines { l -> l.forEach {
-        val col = it.split(",")
-        instruments.add(Instrument(col[0],col[3].split(":"))) }
+    if (!::instruments.isInitialized){
+        val instrumentsRead = mutableListOf<Instrument>()
+        inputStream.bufferedReader().useLines { l -> l.forEach {
+            val col = it.split(",")
+            instrumentsRead.add(Instrument(col[0].toInt(),col[1],col[4].split(":"))) }
 
+        }
+
+        instruments = instrumentsRead
     }
 
     return instruments

@@ -17,12 +17,22 @@ import android.widget.*
 class InstrumentSearch : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d("InstrumentSearch", "Start")
+
         super.onCreate(savedInstanceState)
         if (Intent.ACTION_SEARCH == intent.action){
             val query: String = intent.getStringExtra(SearchManager.QUERY)
 
             showResults(query)
+        } else if (Intent.ACTION_VIEW == intent.action) {
+            val detailUri = intent.data
+            val id = detailUri.lastPathSegment.toInt()
+            val detailsIntent = Intent(applicationContext, TuneActivity::class.java).apply {
+                val instrument = getInstrument(applicationContext,id)
+                if (instrument == null) finish()
+                putExtra(EXTRA_MESSAGE, instrument)
+            }
+            ContextCompat.startActivity(applicationContext, detailsIntent, null)
+            finish()
         }
     }
 

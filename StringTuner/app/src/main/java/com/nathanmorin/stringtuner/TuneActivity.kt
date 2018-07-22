@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -57,7 +58,10 @@ class TuneActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tune)
 
+        Log.d("TunActivity","starting")
+
         val instrument = intent.getParcelableExtra<Instrument>(EXTRA_MESSAGE)
+
 
 
         saveInstrument(applicationContext, instrument)

@@ -37,6 +37,9 @@
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
+        <provider
+            android:authorities="com.nathanmorin.stringtuner.SearchSuggestionProvider"
+            android:name=".SearchSuggestionProvider"/>
     </application>
 
 </manifest>

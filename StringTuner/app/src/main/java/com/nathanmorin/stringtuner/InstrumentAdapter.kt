@@ -54,7 +54,7 @@ class InstrumentAdapter(context: Context, private var instrumentData: List<Instr
                 val filterResults = FilterResults()
 
                 val instruments = instrumentData.filter {
-                    it.name.toLowerCase().contains(constraint.toString().toLowerCase())
+                    it.matchesSearch(constraint.toString())
                 }
                 filterResults.count = instruments.size
                 filterResults.values = instruments

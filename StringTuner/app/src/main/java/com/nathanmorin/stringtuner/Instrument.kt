@@ -3,13 +3,14 @@ package com.nathanmorin.stringtuner
 import android.os.Parcel
 import android.os.Parcelable
 
-class Instrument(val name: String, val tuning: List<String>) : Parcelable {
+class Instrument(val id: Int, val name: String, val tuning: List<String>) : Parcelable {
     constructor(parcel: Parcel) : this(
+            parcel.readInt(),
             parcel.readString(),
-            parcel.createStringArrayList()) {
-    }
+            parcel.createStringArrayList())
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeInt(id)
         parcel.writeString(name)
         parcel.writeStringList(tuning)
     }
@@ -40,5 +41,12 @@ class Instrument(val name: String, val tuning: List<String>) : Parcelable {
         other as Instrument
 
         return other.name == name
+    }
+
+
+    fun matchesSearch(search: String?): Boolean {
+        if (search.isNullOrEmpty()) return true
+        search as String
+        return this.name.toLowerCase().contains(search.toLowerCase())
     }
 }
