@@ -4,15 +4,14 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStream
 
-lateinit var instruments: List<Instrument>
+private lateinit var instruments: Map<Int,Instrument>
 
 fun getInstrument(context: Context, id: Int): Instrument?{
 
-    return getInstruments(context).firstOrNull { it.id == id }
+    return getInstrumentMap(context)[id]
 }
 
-fun getInstruments(context: Context): List<Instrument> {
-
+fun getInstrumentMap(context: Context): Map<Int,Instrument> {
     val inputStream: InputStream = context.resources.openRawResource(R.raw.instrument_tunings_parsed)
 
     if (!::instruments.isInitialized){
@@ -23,11 +22,13 @@ fun getInstruments(context: Context): List<Instrument> {
 
         }
 
-        instruments = instrumentsRead
+        instruments = instrumentsRead.map{ it.id to it}.toMap()
     }
 
     return instruments
-
+}
+fun getInstruments(context: Context): List<Instrument> {
+    return getInstrumentMap(context).values.toList()
 }
 
 fun getSavedInstruments(context: Context) : List<Instrument> {
@@ -36,21 +37,16 @@ fun getSavedInstruments(context: Context) : List<Instrument> {
 
     val savedRaw = sharedPref.getString(context.getString(R.string.instrument_key),null)
 
-    return if (savedRaw != null){
-        val type = object : TypeToken<List<Instrument>>() {}.type
-
-        Gson().fromJson<List<Instrument>>(savedRaw,type)
-    } else {
-        emptyList()
-    }
+    return savedRaw?.split(",")?.mapNotNull { getInstrument(context,id = it.toInt()) } ?: emptyList()
 
 }
 
-fun writeSavedInstruments(context: Context, instruments: List<Instrument>) {
+fun writeSavedInstruments(context: Context, instruments: List<Instrument?>) {
     val editor = context.getSharedPreferences(
             context.getString(R.string.preference_file_key), Context.MODE_PRIVATE).edit()
-    val connectionsJSONString = Gson().toJson(instruments)
-    editor.putString(context.getString(R.string.instrument_key), connectionsJSONString)
+//    val connectionsJSONString = Gson().toJson(instruments)
+    editor.putString(context.getString(R.string.instrument_key),
+            instruments.mapNotNull { it?.id.toString() }.reduce{ i1, i2 -> "$i1,$i2" })
 
     editor.apply()
 }

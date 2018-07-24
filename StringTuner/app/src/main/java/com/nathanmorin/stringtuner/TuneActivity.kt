@@ -1,49 +1,77 @@
 package com.nathanmorin.stringtuner
-import android.content.Context
-import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.SystemClock
 import android.support.v4.content.ContextCompat
+import android.support.v7.widget.GridLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import net.mabboud.android_tone_player.ContinuousBuzzer
+import kotlin.math.ceil
 
 private var currentTone: Double = -1.0
 
-class TuneAdapter(context: Context,
-                  private var tunings: List<String>,
+private val numCols = 2
+
+class TuneAdapter(private var tunings: List<String>,
                   private var tuneFrequencies: Map<String,Double>,
-                  private var tonePlayer: ContinuousBuzzer = ContinuousBuzzer() ) : ArrayAdapter<String>(context, 0, tunings) {
+                  private var tonePlayer: ContinuousBuzzer = ContinuousBuzzer() ) : RecyclerView.Adapter<TuneAdapter.ViewHolder>() {
 
+    class ViewHolder(val view: View) : RecyclerView.ViewHolder(view)
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val tune = getItem(position)
+    val buttons = mutableListOf<Button>()
+    private var mLastClickTime: Long = 0
 
-        val tuningView = convertView ?: LayoutInflater.from(context).inflate(R.layout.instrument_tune,null)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.instrument_tune,parent,false)
+
+        view.minimumHeight = parent.measuredHeight / ceil(tunings.size / numCols.toDouble()).toInt()
+
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val colorOn = ContextCompat.getColor(holder.view.context,R.color.colorAccent)
+        val colorOff = ContextCompat.getColor(holder.view.context,R.color.colorButton)
+        val tune = tunings[position]
+
+        val tuningView = holder.view
 
         val btnTune = tuningView.findViewById<Button>(R.id.tuneAction)
         btnTune.text = tune
+        btnTune.height
+        btnTune.setBackgroundColor(colorOff)
         btnTune.setOnClickListener {
+            if (SystemClock.elapsedRealtime() - mLastClickTime > 1000){
+                val freq = tuneFrequencies[tune] as Double
 
-            val freq = tuneFrequencies[tune]
+                if (currentTone == freq){
+                    tonePlayer.stop()
+                    currentTone = -1.0
+                    buttons.forEach{ it.setBackgroundColor(colorOff)}
+                } else{
+                    currentTone = freq
+                    tonePlayer.stop()
+                    tonePlayer.toneFreqInHz = freq
+                    tonePlayer.play()
+                    buttons.forEach{ it.setBackgroundColor(colorOff)}
+                    btnTune.setBackgroundColor(colorOn)
+                }
 
-            if (currentTone == freq){
-                tonePlayer.stop()
-                currentTone = -1.0
-            } else{
-                tonePlayer.stop()
-                tonePlayer.toneFreqInHz = freq!!
-                tonePlayer.play()
-                currentTone = freq
             }
 
         }
-        return tuningView
 
+        buttons.add(btnTune)
     }
+
+    override fun getItemCount() = tunings.size
 
 }
 
@@ -54,6 +82,10 @@ class TuneActivity : AppCompatActivity() {
 
     private val tonePlayer = ContinuousBuzzer()
 
+    private lateinit var tuneContainer: RecyclerView
+    private lateinit var viewAdapter: RecyclerView.Adapter<*>
+    private lateinit var viewManager: RecyclerView.LayoutManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tune)
@@ -62,44 +94,21 @@ class TuneActivity : AppCompatActivity() {
 
         val instrument = intent.getParcelableExtra<Instrument>(EXTRA_MESSAGE)
 
-
-
         saveInstrument(applicationContext, instrument)
-
-        val tuneContainer = findViewById<GridView>(R.id.tuneContainer)
 
         val tuningFrequencies = getTuningFrequency(context = applicationContext)
 
         tonePlayer.pausePeriodSeconds = 600.0
         tonePlayer.volume = 500
 
-        tuneContainer.adapter = TuneAdapter(applicationContext,instrument.tuning, tuningFrequencies,tonePlayer)
+        viewManager = GridLayoutManager(applicationContext, numCols)
+        viewAdapter = TuneAdapter(instrument.tuning,tuningFrequencies,tonePlayer)
 
-
-//        instrument.tuning.forEach {
-//            val tune = it
-//            val instrumentView = layoutInflater.inflate(R.layout.instrument_tune,null)
-//
-//            val btnTune = instrumentView.findViewById<Button>(R.id.tuneAction)
-//            btnTune.text = tune
-//            btnTune.setOnClickListener {
-//
-//                val freq = tuningFrequencies[tune]
-//
-//                if (currentTone == freq){
-//                    tonePlayer.stop()
-//                    currentTone = -1.0
-//                } else{
-//                    tonePlayer.stop()
-//                    tonePlayer.toneFreqInHz = freq!!
-//                    tonePlayer.play()
-//                    currentTone = freq
-//                }
-//
-//            }
-//
-//            tuneContainer.addView(instrumentView)
-//        }
+        tuneContainer = findViewById<RecyclerView>(R.id.tuneContainer).apply {
+            setHasFixedSize(true)
+            layoutManager = viewManager
+            adapter = viewAdapter
+        }
 
 
     }
