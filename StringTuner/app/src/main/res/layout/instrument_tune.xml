@@ -9,7 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="fill_parent"
         android:layout_weight="1"
-        android:background="@color/colorButton"
+        android:background="@drawable/btn_tune_off"
         android:padding="0dp"
         android:soundEffectsEnabled="false"
         android:text="A1"

@@ -1,6 +1,4 @@
 package com.nathanmorin.stringtuner
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
@@ -37,8 +35,6 @@ class TuneAdapter(private var tunings: List<String>,
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val colorOn = ContextCompat.getColor(holder.view.context,R.color.colorAccent)
-        val colorOff = ContextCompat.getColor(holder.view.context,R.color.colorButton)
         val tune = tunings[position]
 
         val tuningView = holder.view
@@ -46,23 +42,29 @@ class TuneAdapter(private var tunings: List<String>,
         val btnTune = tuningView.findViewById<Button>(R.id.tuneAction)
         btnTune.text = tune
         btnTune.height
-        btnTune.setBackgroundColor(colorOff)
+        btnTune.setBackgroundResource(R.drawable.btn_tune_off)
         btnTune.setOnClickListener {
-            if (SystemClock.elapsedRealtime() - mLastClickTime > 1000){
+            if (SystemClock.elapsedRealtime() - mLastClickTime > 300){
                 val freq = tuneFrequencies[tune] as Double
 
                 if (currentTone == freq){
+                    Log.d("STOPPING",freq.toString())
                     tonePlayer.stop()
                     currentTone = -1.0
-                    buttons.forEach{ it.setBackgroundColor(colorOff)}
+                    buttons.forEach{ it.setBackgroundResource(R.drawable.btn_tune_off)}
                 } else{
+                    Log.d("STARTING",freq.toString())
                     currentTone = freq
                     tonePlayer.stop()
                     tonePlayer.toneFreqInHz = freq
                     tonePlayer.play()
-                    buttons.forEach{ it.setBackgroundColor(colorOff)}
-                    btnTune.setBackgroundColor(colorOn)
+                    buttons.forEach{ it.setBackgroundResource(R.drawable.btn_tune_off)}
+                    btnTune.setBackgroundResource(R.drawable.btn_tune_on)
+                    Thread.sleep(300)
+
                 }
+
+                mLastClickTime = SystemClock.elapsedRealtime()
 
             }
 
