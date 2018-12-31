@@ -79,7 +79,7 @@ class TuneAdapter(private var tunings: List<String>,
 
 
 
-class TuneActivity : AppCompatActivity() {
+class TuneActivity : BaseActivity() {
 
 
     private val tonePlayer = ContinuousBuzzer()
@@ -91,8 +91,6 @@ class TuneActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tune)
-
-        Log.d("TunActivity","starting")
 
         val instrument = intent.getParcelableExtra<Instrument>(EXTRA_MESSAGE)
 
@@ -111,6 +109,8 @@ class TuneActivity : AppCompatActivity() {
             layoutManager = viewManager
             adapter = viewAdapter
         }
+
+        title = instrument.name
 
 
     }

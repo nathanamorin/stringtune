@@ -6,7 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:paddingTop="10dp">
+    android:paddingTop="10dp"
+    android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Instruments"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tv_saved_instrument_message"/>
 
         <ListView
             android:id="@+id/savedInstruments"

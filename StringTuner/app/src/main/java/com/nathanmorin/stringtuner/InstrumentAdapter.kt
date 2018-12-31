@@ -63,7 +63,7 @@ class InstrumentAdapter(context: Context, private var instrumentData: List<Instr
         }
     }
 
-    public fun swapItems(newInstruments: List<Instrument>) {
+    fun swapItems(newInstruments: List<Instrument>) {
 
         this.instrumentData = newInstruments
         this.instrumentsFiltered = newInstruments
