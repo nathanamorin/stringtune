@@ -1,15 +1,12 @@
 package com.nathanmorin.stringtuner
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
-import android.support.v4.content.ContextCompat
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.Button
 import net.mabboud.android_tone_player.ContinuousBuzzer
 import kotlin.math.ceil
 
@@ -48,12 +45,10 @@ class TuneAdapter(private var tunings: List<String>,
                 val freq = tuneFrequencies[tune] as Double
 
                 if (currentTone == freq){
-                    Log.d("STOPPING",freq.toString())
                     tonePlayer.stop()
                     currentTone = -1.0
                     buttons.forEach{ it.setBackgroundResource(R.drawable.btn_tune_off)}
                 } else{
-                    Log.d("STARTING",freq.toString())
                     currentTone = freq
                     tonePlayer.stop()
                     tonePlayer.toneFreqInHz = freq
