@@ -1,0 +1,245 @@
+1,Ahenk,12 strings 6 courses,Turkey,A3:A3:B3:B3:E4:E4:A4:A4:D5:D5:G5:G5
+2,Akkordolia,4 strings 4 courses,Germany & Austria / Japan / India / Pakistan,F2:A2:C3:F3
+3,Archlute,27 strings 14 courses,Europe,F1:F2:G1:G2:A1:A2:B1:B2:C2:C3:D2:D3:E2:E3:F2:F3:G2:G2:C2:C2:F3:F3:A3:A3:D4:D4:G4
+4,Armonico,7 strings 6 courses,Cuba,E3:A3:D4:G4:G4:B3:E4
+5,Arpeggione,6 strings 6 courses,Vienna - Austria,E2:A2:D3:G3:B3:E4
+6,Autoharp,36 strings 36 courses,USA,F2:G2:C3:D3:E3:F3:G3:A3:B3:C4:D4:E4:F4:G4:A4:B4:C5:D5:E5:F5:G5:A5:B5:C6
+7,Baglamas,6 strings 3 courses,Greece,D4:D5:A4:A4:D5:D5
+8,Bajo quinto,10 strings 5 courses,Mexico,A2:A1:D3:D2:G2:G2:C3:C3:F3:F3
+9,Bajo Sexto,12 strings 6 courses,Mexico,E2:E1:A2:A1:D3:D2:G2:G2:C3:C3:F3:F3
+10,Balalaika - Alto,3 strings 3 courses,Russia,E3:E3:A3
+11,Balalaika - Bass,3 strings 3 courses,Russia,E2:A2:D3
+12,Balalaika - Contrabass,3 strings 3 courses,Russia,E1:A1:D2
+13,Balalaika - Descant,3 strings 3 courses,Russia,E5:E5:A5
+14,Balalaika - Piccolo,3 strings 3 courses,Russia,B4:E5:A5
+15,Balalaika - Prima,3 strings 3 courses,Russia,E4:E4:A4
+16,Balalaika - Prima - 6-string,6 strings 3 courses,Russia,E4:E4:E4:E4:A4:A4
+17,Balalaika - Secunda,3 strings 3 courses,Russia,A3:A3:D4
+18,Balalaika - Tenor,3 strings 3 courses,Russia,E3:A3:E4
+19,Bandola Andina Colombiana,16 strings 6 courses,Colombia,B3:B3:E4:E4:E4:A4:A4:A4:D5:D5:D5:G5:G5:G5
+20,Bandola Llanera,4 strings 4 courses,Venezuela,A2:D3:A3:E4
+21,Bandola Oriental,8 strings 4 courses,Venezuela,G3:G3:D4:D4:A4:A4:E5:E5
+22,Bandolin,15 strings 6 courses,Ecuador,E5:E4:E5:A5:A4:A5:D5:D5:D5:B5:B5:B5
+23,Bandurria - Philippine,14 strings 6 courses,Philippines,B3:B3:E4:E4:A4:A4:A4:D5:D5:D5:G5:G5:G5
+24,Bandurria - Spanish,12 strings 6 courses,Spain,B4:B4:E5:E5:A5:A5
+25,Banjo (5-string),5 strings 5 courses,US via Africa,G4:D3:G3:B3:D4
+26,Banjo - Bass,4 strings 4 courses,US,E1:A1:D2:G2
+27,Banjo - Cello,4 strings 4 courses,US,C2:G2:D3:A3
+28,Banjo - Cello,5 strings 5 courses,US,G3:D2:G2:B2:D3
+29,Banjo - Contrabass,3 strings 3 courses,US,E1:A1:D2
+30,Banjo - Long Neck,5 strings 5 courses,US (commissioned by Pete Seeger),E4:B2:E3:B3
+31,Banjo - Plectrum,4 strings 4 courses,US via Africa,C3:G3:B3:D4
+32,Banjo - Tenor,4 strings 4 courses,US via Africa,C3:G3:D4:A4
+33,Banjolin,4 strings 4 courses,US,G3:D4:A4:E5
+34,Baryton,17 strings 17 courses Two ranks,Europe (Germany?),A1:D2:G3:C3:E3:A3:D4
+35,Biscernica - 5 string,5 strings 4 courses,Balkans,B3:E4:E4
+36,Bisernica - 6 string,6 strings 4 courses,Croatia - Serbia - Hungary - Slovenia,E3:A3:D4:D4:G4:G4
+37,Bordonua,10 strings 5 courses,Puerto Rico,A2:A3:D4:D3:B3:B3:E4:E4
+38,Bouzouki,8 strings 4 courses,Greece,C3:C4:F3:F4:A3:A3:D4:D4
+39,Bouzouki,6 strings 3 courses,Greece,D3:D4:A3:A3:D4:D4
+40,Brac - 5 string,5 strings 4 courses,Croatia - Serbia - Slovenia,E3:A3:D4:G4:G4
+41,Brac - 6 string,6 strings 4 courses,Croatia - Serbia - Slovenia,G3:G3:D4:D4:A4:A4
+42,Braguinha,4 strings 4 courses,Madeira - Portugal,D4:B4:G4:D5
+43,Bugarija - 5 string,5 strings 4 courses,Croatia - Serbia - Slovenia,G2:B2:D3:G3:G3
+44,Bugarija - 6 string,6 strings 4 courses,Croatia - Serbia - Slovenia,G2:B2:D3:D3:G3:G3
+45,Cak,4 strings 3 courses,Indonesia,D5:D5:G4:B4
+46,Cavaquinho,4 strings 4 courses,Portugal,D4:G4:B4:D5
+47,Cello,4 strings 4 courses,Europe,C2:G2:D3:A3
+48,Čelovič - 4 string,4 strings 4 courses,Croatia - Serbia - Slovenia,E2:A2:D3:G3
+49,Čelovič - Farkas,6 strings 4 courses,Croatia - Serbia - Slovenia,D2:G2:C3:C3:G3:G3
+50,Cetera,16 strings 8 courses,Corsica - France.,C3:C3:D3
+51,Chanzy,3 strings 3 courses,Tuva - Russia,F2:C3:F3
+52,Chapey,3 strings 2 courses,Cambodia,F3:F3:B3
+53,Chapman Stick,10 strings 10 courses,United States,E3:A2:D2:G1:C1:B2:E3:A3:D4
+54,Chapman Stick - Grand Stick,12 strings 12 courses,United States,B3:E3:A2:D2:G1:C1:B2:E3:A3:D4
+55,Charango,10 strings 5 courses,Bolivia - Peru - Argentina Chile - Ecuador,G4:G4:C5:C5:E5:E4:A4:A4:E5:E5
+56,Charango - Ranka,11 strings 5 courses,Cochabamba - Bolivia,G4:G4:C5:C5:E5:E4:A4:A4:E5:E5:E6:D4:D4:A4:A4:G5:G4:C5:C5:G5:G5:G6
+57,Charangón,10 strings 5 courses,Andean Region,D4:D4:G4:G4:B4:B3:E4:E4:B4:B4
+58,Chillador,10 strings 5 courses,Andean mountains,G3:G3:C4:C4:E4:E3:A3:A3:E4:E4
+59,Chitarra battente,10 strings 5 courses,Italy,A3:A3:D4:D4:G3:G3:B3:B3:E4:E4
+60,Chonguri,4 strings 4 courses,Georgia,D2:F2:D3:A2
+61,Çiftelia,2 strings 2 courses,Albania,B3:E3
+62,Cinco Cuatro,5 strings 4 courses,North-western Venezuela,G3:D4:D3:B4
+63,Cittern,10 strings 5 courses,Europe,C2:C2:G2:G2:D3:D3:A3:A3:D4:D4
+64,Cretan lyra,3 strings 3 courses,Crete - Greece,D3:A3:E5
+65,Crwth,5 strings 5 courses,Wales,G2:C3:C2:D2:D3
+66,Cuatro Alto,10 strings 5 courses,Puerto Rico,B3:B4:E4:E4:A4:A4:D5:D5
+67,Cuatro Antiguo,8 strings 4 courses,Puerto Rico,A3:A3:E4:E4:A4:A4:D5:D5
+68,Cuatro Bajo,10 strings 5 courses,Puerto Rico,E3:E2:A3:A2:D3:D3:G3:G3:C4:C4
+69,Cuatro Cubano,8 strings 4 courses,Cuba,G4:G3:C4:C4:E4:E4:A4:A4
+70,Cuatro Soprano,10 strings 5 courses,Puerto Rico,B4:B4:E5:E5:A5:A5
+71,Cuatro - Puerto Rican,10 strings 5 courses,Puerto Rico,B3:B2:E4:E3:A3:A3:D4:D4:G4:G4
+72,Cuatro - Venezuelan,4 strings 4 courses,Venezuela,A3:D4:B3
+73,Cuk,3 strings 3 courses,Indonesia,G4:B3:E3
+74,Cümbüş,12 strings 6 courses,Turkey,A2:A2:B2:B2:E3:E3:A3:A3:D4:D4:G4:G4
+75,Cümbüş - Tambur,6 strings 3 courses,Turkey,D2:D2:A2:A2:D3:D3
+76,Cura,6 strings 3 courses,Turkey,D4:D4:A4:A4:E5:E5
+77,Cura,7 strings 3 courses,Turkey,G3:G3:D4:D4:A4:A4:A4
+78,Cura,8 strings 4 courses,Turkey,G3:G3:D4:D4:A4:A4:E5:E5
+79,Đàn đáy,3 strings 3 courses,Vietnam,G3:C4:F4
+80,Đàn tranh,17 strings - 17 courses,Vietnam,G3:A3:C4:D4:E4:G4:A4:C5:D5:E5:G5:A5:C6:D6:E6:G7:A7
+81,Dihu,2 strings 2 courses,China,G2:D3:D3:A3
+82,Domra - Alto,4 strings 4 courses,Ukraine,C3:G3:D4:A4
+83,Domra - Alto,3 strings 3 courses,Russia,E3:A3:D4
+84,Domra - Bass,4 strings 4 courses,Ukraine,C2:G2:D3:A3
+85,Domra - Bass,3 strings 3 courses,Russia,E2:A2:D3
+86,Domra - Contrabass,3 strings 3 courses,Russia,E1:A1:D2
+87,Domra - Contrabass,4 strings 4 courses,Ukraine,E1:A1:D2:G2
+88,Domra - Mezzo-soprano,3 strings 3 courses,Russia,B3:E4:A4
+89,Domra - Piccolo,3 strings 3 courses,Russia,B4:E5:A5
+90,Domra - Piccolo,4 strings 4 courses,Ukraine,C4:G4:D5:A5
+91,Domra - Prima,3 strings 3 courses,Russia,E4:A4:D5
+92,Domra - Prima,4 strings 4 courses,Ukraine,G3:D4:A4:E5
+93,Domra - Tenor,3 strings 3 courses,Russia,B2:E3:A3
+94,Domra - Tenor,4 strings 4 courses,Ukraine,G2:D3:A3:E4
+95,Dotar,2 strings 2 courses,Uzbekistan,D3:G3
+96,Dotara,4 strings 4 courses,India,B4
+97,Dotara,6 strings 5 courses,Bangladesh,G2:G3:C4:G4:G4:C5
+98,Double bass,4 strings 4 courses,Europe,E1:A1:D2:G2
+99,Double bass - 5-string,5 strings 5 courses,Europe,C1:E1:A1:D2:G2
+100,Dranyen,6 strings 3 courses,Bhutan and Tibet,A3:A3:D3:D3:G3:G3
+101,Dranyen,7 strings 3 courses,Bhutan and Tibet,A3:A3:D4:D3:D3:G3:G3
+102,Erhu,2 strings 2 courses,China,D4:A4
+103,Fiddle,4 strings 4 courses,Europe - USA,G3:D4:A4:E5
+104,Gadulka,3 strings 3 courses,The Balkans,A3:E3:A4
+105,Gaoyinruan,4 strings 4 courses,China,G3:D4:G4:D5
+106,Gehu,4 strings 4 courses,China,C2:G2:D3:A3
+107,Gekkin,4 strings 4 courses,Japan,A3:D4:D4:D5
+108,Geyerleier,8 strings 4 courses,Hamburg - Germany,E3:E2:B3:B2:E3:E3:B3:B3
+109,Grajappi,4 strings 2 courses,Thailand,F2:F2:B2:B2
+110,Guitalele,6 strings 6 courses,US - Japan,A2:D3:G3:C4:E4:A4
+111,Guitar,6 strings 6 courses,Spain (acoustic) USA (electric),E2:A2:D3:G3:B3:E4
+112,Guitar - 10 string,10 strings 10 courses,Spain,C2:E2:A2:D3:G3:B3:E4
+113,Guitar - 12 string,12 strings 6 courses,US?,E3:E2:A3:A2:D4:D3:G4:G3:B3:B3:E4:E4
+114,Guitar - 7 string,7 strings 7 courses,US,B1:E2:A2:D3:G3:B3:E4
+115,Guitar - 8 string (low/high),8 strings 8 courses,Spain,B1:E2:A2:D3:G3:B3:E4:A4
+116,Guitar - 9 string,9 strings 6 courses,US,E2:A2:D3:G4:G3:B3:B3:E4:E4
+117,Guitar - 9 string,9 strings 6 courses,US,E3:E2:A3:A2:D4:D3:G3:B3:E4
+118,Guitar - Alto (Niibori),6 strings 6 courses,Japan,B2:E3:A3:D4
+119,Guitar - bass,4 strings 4 courses,USA,E1:A1:D2:G2
+120,Guitar - bass (12-string),12 strings 4 courses,US,E2:E2:E1:A2:A2:A1:D3:D3:D2:G3:G3:G2
+121,Guitar - bass (5-string),5 strings 5 courses,,B0:E1:A1:D2:G2:E1:A1:D2:G2
+122,Guitar - bass (6-string),6 strings 6 courses,,B0:E1:A1:D2:G2:C3
+123,Guitar - bass (8-string),8 strings 4 courses,US,E2:E1:A2:A1:D3:D2:G3:G2
+124,Guitar - octave,6 strings 6 courses,Germany,E3:A3:D4:G4:B4:E5
+125,Guitar - tenor,4 strings 4 courses,US,C3:G3:D4:A4
+126,Guitarra De Golpe,5 strings 5 courses,Mexico,D3:G3:C4:E3:A3
+127,Guitarro,6 strings 6 courses,Spain,B4:D5:A5:E5
+128,Guitarrón,6 strings 6 courses,Mexico,A1:D2:G2:C3:E3:A2
+129,Guitarron Argentino,6 strings 6courses,Argentina,B1:E2:A2:D3:G3:B3
+130,Gusli,9 strings 9 courses,Russia,E3:A3:B3:C4:D4:E4:F4:G4
+131,Halszither,9 strings 5 courses,Switzerland,G2:D3:D3:G3:G3:B3:B3:D4:D4
+132,Hardingfele,4 strings 4 courses plus 4-5 resonating strings,Norway,A3:D4:A4:E5
+133,Huapanguera,8 strings 5 courses,Mexico,G2:D3:D4:G3:G3:B3:B3:E3
+134,Huobosi,4 strings 4 courses,China,E2:A2:D3:G3
+135,Irish bouzouki,8 strings 4 courses,Ireland,G3:G2:D4:D3:A3:A3:E4:E4
+136,Jarana huasteca,5 strings 5 courses,Mexico,G3:B3:D4:A4
+137,Jarana Jarocha Requinto,4 strings 4 courses,Mexico,G2:A2:D2:G3
+138,Jarana Leona,4 strings 4 courses,Mexico,G2:A2:D3:G3
+139,Kamancheh,4 strings 4 courses,Iran - Armenia - Azerbaijan - Uzbekistan - Turkmenistan,D5:A5:D4:A4
+140,Khonkhota,8 strings 5 courses ,South America,G4:G3:C4:D4:D3:A3:D4:D4
+141,Kithara Sarda,6 strings 6 courses,Sardinia - Italy.,B2:E2:A2:D3:F3:B3
+142,Kokles,11 strings 11 courses,Latvia,G3:A3:C3:D3:E3:F3:G4:A4:B4:C4:G3:A3:C3:D3:E3:F3:G4:A4:B4:C4
+143,Laouto,8 strings 4 courses,Greece,C2:C3:G2:G3:D2:D3:A3:A3
+144,Laúd - Cuban,12 strings 6 courses,Cuba,D3:D3:B3:B3:E4:E4:A4:A4:D5:D5
+145,Laúd - Philippine,14 strings 6 courses,Philippines,B2:B2:E3:E3:A3:A3:A3:D4:D4:D4:G4:G4:G4
+146,Lili'u,8 strings 4 courses,Hawaii,G3:G4:C3:C4:E4:E4:A4:A4
+147,Liuto cantabile,10 strings 5 courses,Naples - Italy,C2:C2:G2:G2:D3:D3:A3:A3:E4:E4
+148,Luc huyen cam,5 strings 5 courses,Vietnam,C3:F3:C4:G4:C5
+149,Luc huyen cam,6 strings 6 courses,Vietnam,E2:A2:D3:G3:B4:E4
+150,Lute,,Europe,G2:G2:C3:C3:F3:F3:A3:A3:D4:D4:G4:G4
+151,Lute guitar,6 strings 6 courses,Germany,E2:A2:D3:G3:B3:E4
+152,Mandobass,4 strings 4 courses,Europe,E1:A1:D2:G2
+153,Mandobass,8 strings 4 courses,Europe,G1:G1:D2:D2:A2:A2:E3:E3
+154,Mandocello,8 strings 4 courses,,C2:C2:G2:G2:D3:D3:A3:A3
+155,Mandola,8 strings 4 courses,,C3:C3:G3:G3:D4:D4:A4:A4
+156,Mandolin,8 strings 4 courses,,G3:G3:D4:D4:A4:A4:E5:E5
+157,Mandolin - Octave,8 strings 4 courses,,G2:G2:D3:D3:A3:A3:E4:E4
+158,Mandolin - Piccolo,8 strings 4 courses,,C4:C4:G4:G4:D5:D5:A5:A5
+159,Mandolinetto,8 strings 4 courses,USA and Canada,G3:G3:D4:D4:A4:A4:E5:E5
+160,Mandriola,12 strings 4 courses,Europe,G3:G3:G3:D4:D4:D4:A4:A4:A4:E5:E5:E5
+161,Manguerito,7 strings 5 courses,La Paz - Bolivia,D4:G4:B4:B3:E4:B4:B4
+162,Nevoud,11 strings 6 courses,Turkey,B2:B2:E3:E3:A3:A3:D4:D4
+163,Octavina,14 strings 6 courses,Philippines,B1:B1:E2:E2:A2:A2:A2:D3:D3:D3:G3:G3:G3
+164,Octobass,3 strings 3 courses,France,C1:G1:C2
+165,Oud,11 strings 6 courses,Middle East,C2:F2:A2:D3:G3:C4
+166,Palida,4 strings 4 courses,Europe,D3:A3:E4:B4
+167,Panduri,3 strings 3 courses,Georgia (Asia),G3:A3:C4
+168,Pardessus de Viole,5 strings 5 courses,Europe,C4:E4:A4:D5
+169,Phin,3 strings 3 courses,Thailand,A3:E4:A4
+170,Pipa,4 strings 4 courses,China,A2:D3:E3:A3
+171,Portuguese guitar,12 strings 6 courses,Portugal,D3:D2:A3:A2:B3:B2:E3:E3:A3:A3:B3:B3
+172,Qinqin,3 strings 3 courses,China,G3:D4:A5
+173,Ramkie,4 strings 4 courses,South Africa,C3:F3:A3:C4
+174,Requinto,6 strings 6 courses,Mexico,A2:D3:G3:C4:E4:A4
+175,Ronroco,10 strings 5 courses,Andean Region,D4:D4:G4:G4:B4:B3:E4:E4:B4:B4
+176,Russian guitar,7 strings 7 courses,Russia,D2:G2:B2:D3:G3:B3:D4
+177,Samica,4 strings 2 courses,Balkans,B3:E4
+178,Sanshin,3 strings 3 courses,Ryukyu Islands - Japan,C3:F3:C4
+179,Sanxian,3 strings 3 courses,China,A2:D3:A3
+180,Sanxian - Large,3 strings 3 courses,China,G2:D3:G3
+181,Sarangi - Nepalese,4 strings 4 courses,Nepal,G4:C5:C5:G5
+182,Sargija,6 strings 3 courses,Albania,C3:C3:G3:G3:D3:D3
+183,Seis Cinco,6 strings 5 courses,North-western Venezuela,E3:A4:A3:D3:B4
+184,Setar,4 strings 3 courses,Iran,C3:C4:G3:C4
+185,Sitar,7 strings (3 are drones) plus 13 sympathetic strings,North India,C5:C4
+186,Socavon,4 strings 4 courses,Panama,G3:D4:A4:B2
+187,Strumstick,3 strings 3 courses,US,G3:D4:G4
+188,Swedish lute (modern),12 strings 12 courses,Sweden,F1:G1:A1:B1:C2:D2
+189,Tambura,8 strings 4 courses,Bulgaria,D3:D3:G3:G3:B3:B3:E4:E4
+190,Tarica,5 strings 3 courses,Europe,C2:G2:G2:C3:C3
+191,Taropatch,6 strings 4 courses,Hawaii,G3:C3:C4:E4:A4:A4
+192,Terzin Kitarra,6 strings 6 courses,Malta,B2:E3:A3:E4
+193,Timple,5 strings 5 courses,Canary Islands - Spain,G4:C5:E4:A4:D5
+194,Tiple de Menorca,5 strings 5 courses,Menorca - Spain,D4:G4:C5:E5:A5
+195,Tiple Requinto,12 strings 4 courses,Colombia,C4:C4:C4:E4:E4:E4:A4:A4:A4:D4:D4:D4
+196,Tiple - American,10 strings 4 courses,US,A4:A3:D4:D3:D4:B3:B3
+197,Tiple - Columbian,12 strings 4 courses,Colombia,C4:C3:C4:E4:E3:E4:A4:A3:A4:D4:D4:D4
+198,Tiple - Puerto Rican,5 strings 5 courses,Puerto Rico,E3:A3:D4:G4:C5
+199,Tres - Cuban,6 strings 3 courses,Cuba,G4:G3:C4:C4:E3:E4
+200,Tres - Puerto Rican,9 strings 3 courses,Puerto Rico,G4:G3:G4:C4:C4:C4:E4:E3:E4
+201,Tricordia,12 strings 4 courses,Mexico,G2:G3:G3:D3:D4:D4:A3:A4:A4:E4:E5:E5
+202,Tzouras,6 strings 3 courses,Tzouras,D3:D4:A3:A3:D4:D4
+203,Ukulele - Baritone,4 strings 4 courses,Hawaii,D3:G3:B3:E4
+204,Ukulele - Bass,4 strings 4 courses,US,E2:A2:D3:G3
+205,Ukulele - Concert,4 strings 4 courses,Hawaii,G4:C4:E4:A4
+206,Ukulele - Contrabass (UBass),4 strings 4 courses,US,E1:A1:D2:G2
+207,Ukulele - Pocket,4 strings 4 courses,Hawaii,C5:F5:A5
+208,Ukulele - Soprano,4 strings 4 courses,Hawaii,G4:C4:E4:A4
+209,Ukulele - Tahitian,8 strings 4 courses,Tahiti,G4:G4:C5:C5:E5:E5:A4:A4
+210,Ukulele - Tenor,4 strings 4 courses,Hawaii,G3:C4:E4:A4
+211,Veena,7 strings 7 courses,South India,C3:D3:E3:F3:G3:A3:B3
+212,Vihuela,5 strings 5 courses,Mexico,A3:D4:G4:B3:E4
+213,Viol - alto,6 strings 6 courses,Europe,A2:D3:G3:B3:E4:A4
+214,Viol - bass,7 strings 7 courses,Europe,A1:D2:G2:C3:E3:A3:D4
+215,Viol - bass,6 strings 6 courses,Europe,D2:G2:C3:E3:A3:D4
+216,Viol - contrabass,6 strings 6 courses,Europe,D1:G1:C2:E2:A2:D3
+217,Viol - Tenor,6 strings 6 courses,Europe,G2:C3:F3:A3:D4:G4
+218,Viol - Treble,6 strings 6 courses,Europe,D3:G3:C4:E4:A4:D5
+219,Viola,4 strings 4 courses,Europe,C3:G3:D4:A4
+220,Viola Amarantina,10 strings 5 courses,Amarante - Portugal,D3:D2:A3:A2:B3:B2:E3:E3:A3:A3
+221,Viola Beiroa,12 strings 7 courses,Portugal,D3:D3:A3:A2:D3:D2:G3:G2:B3:B3:D3:D3
+222,Viola Braguesa,10 strings 5 courses,Portugal,C4:C3:G4:G3:A4:A3:D4:D4:G4:G4
+223,Viola caipira,10 strings 5 courses,Brazil,A3:A2:D4:D2:A3:A3:D4:D4
+224,Viola Campaniça,10 strings 5 courses,Portugal,C3:C2:F3:F2:C3:C3:E3:E3:G3:G3
+225,Viola Da Terra,12 strings 5 courses,Azores (Portugal),A3:A3:A2:D4:D4:D3:G3:G3:B3:B3:D4:D4
+226,Viola De Arame,9 strings 5 courses,Madeira - Portugal,G3:G2:D3:D2:G3:G3:B3:D3:D3
+227,Viola de cocho,5 strings 5 courses,Mato Grosso - South-western Brazil,G3:D3:E3:A3:D4
+228,Viola Terceira,15 strings 6 courses,Azores (Portugal),E3:E3:E2:A3:A3:A2:D4:D4:D3:G4:G3:B3:B3:E3:E3
+229,Viola Toeira,12 strings 5 courses,Portugal,A3:A3:A2:D4:D4:D3:G4:G3:B3:B3:E3:E3
+230,Violao De Sete Cordas,7 strings 7 courses,Brazil,C2:E2:A2:D3:G3:B3:E4
+231,Violin,4 Strings 4 courses,Lombardy,G3:D4:A4:E5
+232,Violin - Tenor,4 Strings 4 courses,US,G2:D3:A3:E4
+233,Waldzither - bass,9 strings 5 courses,Germany,A2:E3:E3:A3
+234,Waldzither - descant,9 strings 5 courses,Germany,G3:D4:D4:G4:G4:B4:B4:D5
+235,Waldzither - Heym,14 strings 6 courses,Germany,C2:C2:G3:G3:G3:C4:C4:C4:E4:E4:E4:G4:G4
+236,Waldzither - piccolo,9 strings 5 courses,Germany,C4:G4:G4:C5:C5:E5:E5:G5:G5
+237,Waldzither - tenor,9 strings 5 courses,Germany,C3:G3:G3:C4:C4:E4:E4:G4:G4
+238,Yayli Tambur,6 strings 3 courses,Turkey,D2:D2:A2:A2:D3:D3
+239,Yueqin,4 strings 4 courses,China,G3:D4:G4:D5
+240,Yueqin - Taiwanese,2 strings 2 courses,Taiwan,D3:A4
+241,Zheng,18 strings 18 courses,China,C2:D2:E2:G2:A2:C3:D4:E4:G4:A4:C4:D4:E4:G4:A4:C5:D5
+242,Zhonghu,2 strings 2 courses,China,G3:D4:A3:E4
+243,Zhongruan,4 strings 4 courses,China,G2:D3:G3:D4
+244,Zither - Alpine,5 fretted strings 5 courses plus 37 open accompaniment & bass strings,Austria - Germany - elsewhere.,A4:A4:D4:G3:C3
+245,Zither - Concert,5 fretted strings 5 courses plus 29 - 30 open accompaniment & bass strings,America - Germany - elsewhere.,A4:A4:D4:G3:C3
