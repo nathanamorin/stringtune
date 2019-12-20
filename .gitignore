@@ -6,4 +6,5 @@
 .flutter-*
 .packages
 build
+*.lock
 *lock*
