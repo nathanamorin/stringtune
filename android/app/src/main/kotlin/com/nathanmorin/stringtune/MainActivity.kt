@@ -1,4 +1,4 @@
-package com.example.untitled
+package com.nathanmorin.stringtune
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

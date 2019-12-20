@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:shared_preferences_web/shared_preferences_web.dart';
 import 'tune_page.dart';
 
 import 'instruments.dart';
