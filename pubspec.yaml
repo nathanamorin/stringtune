@@ -1,5 +1,5 @@
-name: untitled
-description: A new Flutter project.
+name: stringtuner
+description: String Tuning
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -20,6 +20,7 @@ dependencies:
   csv: ^4.0.3
   soundpool: ^0.5.3
   wave_generator: ^0.1.0
+  shared_preferences: ^0.5.6
   flutter:
     sdk: flutter
 
