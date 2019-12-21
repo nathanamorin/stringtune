@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:soundpool/soundpool.dart';
-import 'package:wave_generator/wave_generator.dart';
 
 import 'instruments.dart';
 

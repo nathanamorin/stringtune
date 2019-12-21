@@ -176,11 +176,13 @@ class _HomePage extends State<HomePage> {
     instruments.addAll(instrumentsStore);
 
     // Uncomment SharedPreferences & Remove refreshListView after web issue is fixed
-//    SharedPreferences.getInstance().then((prefs) {
-//      List<String> savedInstruments = getSavedList(prefs, savedInstrumentsKey);
-//      loadInstruments(savedInstruments);
-//    });
-    refreshListView();
+    SharedPreferences.getInstance().then((prefs) {
+      List<String> savedInstruments = getSavedList(prefs, savedInstrumentsKey);
+      setState(() {
+        loadInstruments(savedInstruments);
+      });
+    });
+//    refreshListView();
     super.initState();
   }
 }
