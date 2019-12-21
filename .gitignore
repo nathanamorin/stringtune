@@ -2,3 +2,9 @@
 **/.idea
 .DS_Store
 **/app/release
+.dart_tool
+.flutter-*
+.packages
+build
+*.lock
+*lock*
